@@ -1,0 +1,57 @@
+{
+  "plugin.name": "Menu",
+
+  "ui.actions": "Azioni",
+  "ui.add.menu": "Aggiungi sottomenu",
+  "ui.add.menuItem": "Aggiungi voce",
+  "ui.clone": "Duplica",
+  "ui.create.menu": "Crea nuovo menu",
+  "ui.delete": "Elimina",
+  "ui.delete.menuItem": "Elimina voce",
+  "ui.deleted.menu": "Il menu è stato eliminato",
+  "ui.drag.menuItem": "Trascina voce",
+  "ui.edit": "Modifica",
+  "ui.items.count": "{number, plural, =0 {Nessuna voce} one {# voce} other {# voci}}",
+  "ui.move.menuItem.down": "Sposta giù",
+  "ui.move.menuItem.up": "Sposta su",
+  "ui.save": "Salva",
+  "ui.saved": "Salvato",
+  "ui.search": "Cerca menu",
+  "ui.untitled": "Senza titolo",
+  "ui.updatedAt": "Ultima modifica",
+
+  "clone.header.title": "Duplica menu",
+  "create.header.title": "Crea menu",
+  "edit.header.title": "Modifica menu",
+  "edit.item.select": "Seleziona una voce per modificarla.",
+  "edit.item.title": "Modifica voce",
+  "edit.state.empty": "Aggiungi la prima voce",
+  "edit.tabs.title": "Modifica voce",
+  "edit.tabs.title.link": "Link",
+  "index.header.subtitle": "Personalizza la struttura dei menu e delle loro voci",
+  "index.state.empty": "Nessun menu trovato",
+
+  "form.label.items": "Voci",
+  "form.label.option._blank": "_blank",
+  "form.label.option._parent": "_parent",
+  "form.label.option._self": "_self",
+  "form.label.option._top": "_top",
+  "form.label.slug": "Slug",
+  "form.label.target": "Target",
+  "form.label.title": "Titolo",
+  "form.label.url": "URL",
+  "form.placeholder.untitled": "Senza titolo",
+
+  "slug.available": "Disponibile",
+  "slug.unavailable": "Non disponibile",
+  "slug.regenerate": "Rigenera",
+
+  "relation.placeholder": "Aggiungi una relazione",
+  "relation.full": "Rimuovi la relazione attuale per sceglierne un'altra",
+  "relation.empty": "Nessuna relazione disponibile",
+  "relation.remove": "Rimuovi",
+
+  "field.unsupported": "Il tipo di campo \"{type}\" non è supportato.",
+
+  "error.url.invalid": "Il formato dell'URL non è valido"
+}

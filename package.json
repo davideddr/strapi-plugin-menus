@@ -1,0 +1,121 @@
+{
+  "name": "@davideddr/strapi-plugin-menus",
+  "version": "1.1.0",
+  "description": "Strapi 5 plugin to build and manage nested menus and menu items.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davideddr/strapi-plugin-menus.git"
+  },
+  "author": "Davide Da Rech <davide.darech@impresoftengage.com>",
+  "contributors": [
+    {
+      "name": "Matt Milburn",
+      "url": "https://github.com/mattmilburn"
+    }
+  ],
+  "keywords": [
+    "strapi",
+    "strapi-5",
+    "strapi-plugin",
+    "plugin",
+    "menu",
+    "menus",
+    "navigation",
+    "nested",
+    "mega-menu"
+  ],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "types": "./dist/admin/src/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "MIGRATION.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.0.0 <=26.x.x"
+  },
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "lint": "eslint admin/src server/src",
+    "format": "prettier --check \"{admin,server}/src/**/*.{ts,tsx,json}\"",
+    "format:fix": "prettier --write \"{admin,server}/src/**/*.{ts,tsx,json}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ts:front": "tsc -p admin/tsconfig.json --noEmit",
+    "test:ts:back": "tsc -p server/tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build && npm run verify"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "yup": "0.32.9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@strapi/design-system": "^2.2.4",
+    "@strapi/icons": "^2.2.4",
+    "@strapi/sdk-plugin": "^6.1.1",
+    "@strapi/strapi": "^5.55.1",
+    "@strapi/typescript-utils": "^5.55.1",
+    "@strapi/utils": "^5.55.1",
+    "@types/lodash": "^4.17.13",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.9.9",
+    "react": "^18.3.1",
+    "react-dnd": "16.0.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "^6.8.9",
+    "react-router-dom": "^6.30.6",
+    "styled-components": "^6.5.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vitest": "^3.2.4"
+  },
+  "peerDependencies": {
+    "@strapi/design-system": "^2.0.0",
+    "@strapi/icons": "^2.0.0",
+    "@strapi/sdk-plugin": "^5.0.0 || ^6.0.0",
+    "@strapi/strapi": "^5.0.0",
+    "@strapi/utils": "^5.0.0",
+    "react": "^18.0.0",
+    "react-dnd": "^16.0.0",
+    "react-dom": "^18.0.0",
+    "react-intl": "^6.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "menus",
+    "displayName": "Menus",
+    "description": "Build and manage nested menus and menu items."
+  }
+}
